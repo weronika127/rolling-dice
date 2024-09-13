@@ -1,0 +1,158 @@
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    background-image: url('tlo.png'); 
+    
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+
+header {
+    background-color: #01869d;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #ddd;
+    border-radius: 4px;
+}
+
+nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav ul li ul.dropdown li {
+    margin: 0;
+    padding: 0;
+}
+
+
+.content {
+    width: 800px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #01869d;
+    color: #fff;
+    width: 100%;
+}
+
+
+.button {
+    background-color: #0fc1d9; 
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0fb0c5;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+input[type="text"], button, .button {
+    box-shadow: none; 
+    outline: none; 
+    border: 1px solid #ccc; 
+}
+
+
+input[type="text"]:focus, button:focus, .button:focus {
+    box-shadow: none;
+    outline: none;
+}
